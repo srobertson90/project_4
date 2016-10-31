@@ -14,7 +14,7 @@ al4 = Album.create({title: "Victory Songs", cover: "E-VS.png", artist_id: ar3.id
 Stock.create({
   medium: "CD",
   stock_level: 17,
-  stock_threshold: 10,
+  optimum_stock: 10,
   buy_price: 5,
   sell_price: 8,
   album_id: al1.id
@@ -22,7 +22,7 @@ Stock.create({
 Stock.create({
   medium: "Vinyl",
   stock_level: 20,
-  stock_threshold: 10,
+  optimum_stock: 10,
   buy_price: 8,
   sell_price: 14,
   album_id: al2.id
@@ -30,7 +30,7 @@ Stock.create({
 Stock.create({
   medium: "Cassette",
   stock_level: 4,
-  stock_threshold: 10,
+  optimum_stock: 10,
   buy_price: 3,
   sell_price: 5,
   album_id: al3.id
@@ -38,7 +38,7 @@ Stock.create({
 Stock.create({
   medium: "CD",
   stock_level: 0,
-  stock_threshold: 10,
+  optimum_stock: 10,
   buy_price: 6,
   sell_price: 10,
   album_id: al4.id
