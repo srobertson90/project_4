@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  medium: MyString
+  stock_level: 1
+  optimum_stock: 1
+  buy_price: 1
+  sell_price: 1
+  album_id: 
+
+two:
+  medium: MyString
+  stock_level: 1
+  optimum_stock: 1
+  buy_price: 1
+  sell_price: 1
+  album_id: 
