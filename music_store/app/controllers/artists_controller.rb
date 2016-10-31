@@ -5,7 +5,7 @@ class ArtistsController < ApplicationController
       only: [:id, :name, :genre],
       include:{
         albums:{
-          only:[:id, :name, :cover],
+          only:[:id, :title, :cover],
           include:{ 
             stock:{
               except:[:created_at, :updated_at, :album_id]
