@@ -13,14 +13,10 @@ let Catalog = React.createClass({
     return (
       <div>
         {artists}
-
       </div>
     )
   }
 
-
-
 })
-
 
 module.exports = Catalog

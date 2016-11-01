@@ -10,6 +10,9 @@
 /rails/!/log/.keep
 /rails/tmp
 
+# Ignore all node files
 /react/node_modules
 /react/client/node_modules
+
+#Ignore build files
 /react/client/build/bundle.*

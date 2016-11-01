@@ -1,23 +1,39 @@
 const React = require('react')
+const Stock = require('./Stock')
 
 let Album = (props)=>{
 
-
   let stocks = props.albumInfo.stock.map((stock)=>{
-    return (
-      <div key={stock.id}>
-        <p>{stock.medium} -- Buy : {stock.buy_price} / Sell : {stock.sell_price}</p>
-
-      </div>
-      )
+    return <Stock key={stock.id} stockInfo={stock}/>
   })
 
   return (
-    <div>
+    <div className="albumContainer">
+
+      <img className="albumCover" src={props.albumInfo.cover}/>
+
+      <div className="albumInfo">
       <h4>{props.albumInfo.title}</h4>
-      {stocks}
+
+      <table>
+        <tbody>
+
+          <tr>
+            <th>Format</th>
+            <th>Stock</th> 
+            <th>Optimal</th>
+            <th>Buy</th>
+            <th>Sell</th>
+          </tr>
+
+          {stocks}
+
+        </tbody>
+      </table>
+      </div>
+
     </div>
-    )
+  )
 }
 
-module.exports=Album
+module.exports = Album

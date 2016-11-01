@@ -6,10 +6,18 @@ ar1 = Artist.create({name: "Amon Amarth", genre: "Melodic-Death Metal"})
 ar2 = Artist.create({name: "Tool", genre: "Progressive Metal"})
 ar3 = Artist.create({name: "Ensiferum", genre: "Folk Metal"})
 
-al1 = Album.create({title: "Twilight of the Thunder God", cover: "AA-TOTTG.png", artist_id: ar1.id})
-al2 = Album.create({title: "Sutur Rising", cover: "AA-SR.png", artist_id: ar1.id})
-al3 = Album.create({title: "10,000 Days", cover: "T-1D.png", artist_id: ar2.id})
-al4 = Album.create({title: "Victory Songs", cover: "E-VS.png", artist_id: ar3.id})
+al1 = Album.create({title: "Twilight of the Thunder God", 
+  cover: "http://rs420.pbsrc.com/albums/pp285/scottjn19/Amon_Amarth_-_Twlight_of_the_Thunde.jpg~c200", 
+  artist_id: ar1.id})
+al2 = Album.create({title: "Sutur Rising", 
+  cover: "AA-SR.png", 
+  artist_id: ar1.id})
+al3 = Album.create({title: "10,000 Days", 
+  cover: "T-1D.png", 
+  artist_id: ar2.id})
+al4 = Album.create({title: "Victory Songs", 
+  cover: "E-VS.png", 
+  artist_id: ar3.id})
 
 Stock.create({
   medium: "CD",

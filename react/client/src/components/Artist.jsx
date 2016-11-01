@@ -2,22 +2,18 @@ const React = require('react')
 const Album = require('./Album')
 
 let Artist = (props)=>{
-  console.log(props)
-  let albums=props.artistData.albums.map((album)=>{
-    console.log(album)
+  
+  let albums = props.artistData.albums.map((album)=>{
     return <Album key={album.id} albumInfo={album}/>
   })
-  console.log(albums)
-
-
 
   return (
-    <div>
-      <h4> Name: {props.artistData.name}</h4>
-      <p> Genre: {props.artistData.genre}</p>
-      <div className="album-components-container">{albums}</div>
+    <div className="artistContainter">
+      <h3> {props.artistData.name} - {props.artistData.genre}</h3>
+      <div className="artistAlbumsContainer">{albums}</div>
       <hr></hr>
-    </div>)
+    </div>
+  )
 }
 
 module.exports=Artist
