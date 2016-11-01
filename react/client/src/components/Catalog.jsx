@@ -11,7 +11,7 @@ let Catalog = React.createClass({
     })
 
     return (
-      <div>
+      <div className="artist-container">
         {artists}
       </div>
     )

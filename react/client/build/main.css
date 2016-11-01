@@ -1,11 +1,33 @@
-.artist-container {
-  background-color: green;
-}
-
-.album-container {
-  display: flex;
-}
-
 body {
-  background: dodgerblue;
+  background-color: #232729;
+  color: #FFFFFF;
+}
+
+.artist-container {
+  float:center;
+  /*background-color: #403A37;*/
+  width: 90%;
+}
+
+.album-div {
+  display: flex;
+  margin-bottom: 15px;
+  margin-left: 5%;
+}
+
+.album-cover {
+  width: 200px;
+  height: 200px;
+}
+
+.album-info {
+  margin-left: 2%;
+  float:center;
+  background-color: #403A37;
+  width: 80%;
+  height: 200px;
+}
+
+.album-info-content {
+  margin-left: 15px;
 }

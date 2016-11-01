@@ -13,7 +13,7 @@ window.onload = ()=>{
     let catalogData = JSON.parse(progressEvent.target.response);
     ReactDom.render(
       <Catalog catalogData={catalogData}/>,
-      document.getElementById("body-container"))
+      document.getElementById("main"))
   }
 
   const catalogData = apiRequester.get("http://localhost:3000/api/artists", renderCatalog)

@@ -8,14 +8,14 @@ let Album = (props)=>{
   })
 
   return (
-    <div className="album-container">
+    <div className="album-div">
 
       <img className="album-cover" src={props.albumInfo.cover}/>
 
       <div className="album-info">
-      <h4>{props.albumInfo.title}</h4>
+      <h4 className="album-info-content">{props.albumInfo.title}</h4>
 
-      <table>
+      <table className="album-info-content">
         <tbody>
 
           <tr>

@@ -8,9 +8,9 @@ let Artist = (props)=>{
   })
 
   return (
-    <div className="artist-container">
+    <div className="artist-div">
       <h3> {props.artistData.name} - {props.artistData.genre}</h3>
-      <div className="artist-albums-container">{albums}</div>
+      {albums}
     </div>
   )
 }
