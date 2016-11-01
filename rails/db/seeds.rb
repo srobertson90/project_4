@@ -10,13 +10,13 @@ al1 = Album.create({title: "Twilight of the Thunder God",
   cover: "http://rs420.pbsrc.com/albums/pp285/scottjn19/Amon_Amarth_-_Twlight_of_the_Thunde.jpg~c200", 
   artist_id: ar1.id})
 al2 = Album.create({title: "Sutur Rising", 
-  cover: "AA-SR.png", 
+  cover: "http://images.popmatters.com/music_cover_art/a/amon_amarth-surtur_rising.jpg", 
   artist_id: ar1.id})
 al3 = Album.create({title: "10,000 Days", 
-  cover: "T-1D.png", 
+  cover: "http://i.somethingawful.com/mjolnir/images/dannymanic~toolcover.jpg", 
   artist_id: ar2.id})
 al4 = Album.create({title: "Victory Songs", 
-  cover: "E-VS.png", 
+  cover: "https://upload.wikimedia.org/wikipedia/ru/9/9d/Ensiferum_-_2007_-_Victory_Songs.jpg", 
   artist_id: ar3.id})
 
 Stock.create({
