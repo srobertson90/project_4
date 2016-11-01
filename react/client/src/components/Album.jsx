@@ -8,11 +8,11 @@ let Album = (props)=>{
   })
 
   return (
-    <div className="albumContainer">
+    <div className="album-container">
 
-      <img className="albumCover" src={props.albumInfo.cover}/>
+      <img className="album-cover" src={props.albumInfo.cover}/>
 
-      <div className="albumInfo">
+      <div className="album-info">
       <h4>{props.albumInfo.title}</h4>
 
       <table>

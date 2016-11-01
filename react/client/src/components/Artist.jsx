@@ -2,16 +2,15 @@ const React = require('react')
 const Album = require('./Album')
 
 let Artist = (props)=>{
-  
+
   let albums = props.artistData.albums.map((album)=>{
     return <Album key={album.id} albumInfo={album}/>
   })
 
   return (
-    <div className="artistContainter">
+    <div className="artist-container">
       <h3> {props.artistData.name} - {props.artistData.genre}</h3>
-      <div className="artistAlbumsContainer">{albums}</div>
-      <hr></hr>
+      <div className="artist-albums-container">{albums}</div>
     </div>
   )
 }

@@ -1,0 +1,11 @@
+.artist-container {
+  background-color: green;
+}
+
+.album-container {
+  display: flex;
+}
+
+body {
+  background: dodgerblue;
+}
